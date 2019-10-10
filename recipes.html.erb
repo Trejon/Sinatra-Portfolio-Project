@@ -1,0 +1,18 @@
+<p> Welcome, <%= @current_user.username %>
+<h1>Recipes</h1>
+
+<% if @recipes.empty? %>
+  <p>Sorry, there are no recipes available at the moment!</p>
+<% else %>
+
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li><a href="/recipes/<%= recipe.id %>"> <%= recipe.title %></a></li>
+  <% end %>
+</ol>
+<% end %>
+
+<br>
+
+<p><a href="/logout"> Log Out </a>
+<p><a href="/recipes/new">New Recipe </a>

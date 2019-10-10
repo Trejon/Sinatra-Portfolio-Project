@@ -1,0 +1,21 @@
+<h2>Welcome to RecipeBook!</h2>
+<p>Please Sign in or Sign up below:</p>
+
+<nav>
+  <% if logged_in? %>
+
+    <a href="/recipes/new"> Create Recipe </a>
+    <br>
+    <a href="/recipes"> View Recipes </a>
+    <br>
+    <a href="/logout"> Log Out </a>
+    <br>
+
+
+  <% else %>
+    <a href="/signup">Sign Up</a>
+    <br>
+    <a href="/login"> Sign In </a>
+  <%end %>
+
+</nav>

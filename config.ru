@@ -6,6 +6,6 @@ end
 
 use Rack::MethodOverride
 use SessionsController
-use PostsController
+use RecipesController
 use UsersController
 run ApplicationController
