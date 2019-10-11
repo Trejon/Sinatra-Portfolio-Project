@@ -1,8 +1,9 @@
-<p> Welcome, <%= @current_user.username %>
-<h1>Recipes</h1>
+<h1>Recipe Book Hub</h1>
+<p> Welcome, <%= @current_user.username %> here's a list of your recipes!
+<h2>Recipes</h2>
 
 <% if @recipes.empty? %>
-  <p>Sorry, there are no recipes available at the moment!</p>
+  <p>Sorry, there are no recipes in your book at the moment!</p>
 <% else %>
 
 <ol>
@@ -14,5 +15,5 @@
 
 <br>
 
+<p><a href="/recipes/new">Add New Recipe </a>
 <p><a href="/logout"> Log Out </a>
-<p><a href="/recipes/new">New Recipe </a>

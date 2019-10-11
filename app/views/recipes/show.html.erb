@@ -1,9 +1,11 @@
 <h1>Recipe details</h1>
 
-<h3><%= @recipe.title %></h3>
-<p>Recipe Description: <%= @recipe.content %></p>
-<p>Cook Time: <%= @recipe.cook_time %></p>
-<p>Time added: <%= @recipe.created_at %></p>
+<h2><%= @recipe.title %></h2>
+<h3>Recipe Description:</h3> <%= @recipe.content %>
+<h3>Recipe Ingredients: </h3><%= @recipe.ingredients %></p>
+<h3>Cook Time: </h3><%= @recipe.cook_time %></p>
+<h3>Serving Size: </h3><%= @recipe.serving_size %></p>
+<h3>Time added: </h3><%= @recipe.created_at %></p>
 
 <% if @recipe.user == current_user %>
 <form action="/recipes/<%= @recipe.id %>/delete" method="POST">
@@ -15,4 +17,6 @@
 
 <p><a href="/recipes/<%= @recipe.id %>/edit">Edit recipe</a>
 <% end %>
-<a href="/recipes">Back to all recipes</a></p>
+<a href="/recipes">Back To All Recipes</a></p>
+<a href="/recipes/new">Add New Recipe</a></p>
+<a href="/logout">Logout</a></p>

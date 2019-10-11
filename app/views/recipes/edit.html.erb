@@ -3,13 +3,21 @@
 
   <input type="hidden" name="_method" id="hidden" value="PATCH">
 
-  <input type="text" name="name" value="<%= @recipe.name %>">
+  <label for="title">Recipe Title:</label>
+  <input type="text" name="title" value="<%= @recipe.title %>">
 
+  <label for="content">Recipe Instructions:</label>
+  <input type="textarea" name="content" value="<%= @recipe.content %>">
+
+  <label for="ingredients">Recipe Ingredients:</label>
+  <input type="textarea" name="ingredients" value="<%= @recipe.ingredients %>">
+
+  <label for="cook_time">Cook Time:</label>
   <input type="text" name="cook_time" value="<%= @recipe.cook_time %>">
 
-  <input type="textarea" name="description" value="<%= @recipe.description %>">
+  <label for="serving_size">Serving Size:</label>
+  <input type="text" name="serving_size" value="<%= @recipe.serving_size %>">
+
 
   <input type="submit" name="submit" value="Update">
-
-      <input type="submit" />
-        </form
+        </form>

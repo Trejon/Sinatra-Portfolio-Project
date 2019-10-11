@@ -1,17 +1,30 @@
 <h1>Add a new recipe</h1>
   <form action="/recipes" method="POST">
     <p>
-    <label for="title">Recipe title:</label>
+    <label for="title">Recipe Title:</label>
       <input type="text" name="title" id="title" />
       </p>
       <p>
-      <label for="content">Recipe description:</label>
+      <label for="content">Recipe Instructions:</label>
         <input type="textarea" name="content" id="content" />
         </p>
+
+        <p>
+        <label for="ingredients">Recipe Ingredients:</label>
+        <input type="textarea" name="ingredients" id="ingredients" />
+        </p>
+
         <p>
         <label for="cook_time">Cook Time:</label>
           <input type="text" name="cook_time" id="cook_time" />
           </p>
 
+          <p>
+          <label for="serving_size">Serving Size:</label>
+            <input type="text" name="serving_size" id="serving_size" />
+            </p>
+
       <input type="submit" />
         </form>
+        <p><a href="/recipes">Back to all recipes </a>
+        <p><a href="/logout">Logout </a>
