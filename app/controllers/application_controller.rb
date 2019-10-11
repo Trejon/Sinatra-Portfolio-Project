@@ -12,15 +12,7 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
-  #
-  # get '/login' do
-  #   erb :"/sessions/login.html"
-  # end
-  #
-  # post '/sessions' do
-  #   raise params.inspect
-  # end
-  #
+
    helpers do
      def logged_in?
        !!current_user
@@ -29,10 +21,6 @@ class ApplicationController < Sinatra::Base
      def current_user
        @current_user ||= User.find_by(:email => session[:email]) if session[:email]
      end
-
-     # def current_user_recipes
-     #   @current_user_recipes ||= Recipe.find_by(:id => session[:id]) if session[:id]
-     # end
 
      def login(email, password)
         user = User.find_by(:email => email)
@@ -48,10 +36,4 @@ class ApplicationController < Sinatra::Base
      def log_out!
        session.clear
      end
-  #
-  #   def redirect_if_not_logged_in
-  #     if !logged_in?
-  #       redirect '/login'
-  #     end
-  #   end
    end
