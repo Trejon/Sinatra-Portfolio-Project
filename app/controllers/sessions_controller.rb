@@ -11,6 +11,6 @@ end
 
    get '/logout' do
      log_out!
-     redirect '/login'
+     redirect '/'
    end
 end
