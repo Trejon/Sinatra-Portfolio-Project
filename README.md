@@ -1,27 +1,26 @@
-Sinatra project mvc
+# Recipe Book Hub
 
-Builds an app to create, show, edit, and delete recipes from a database
-We're going to be building a web app to store recipes for you to access whenever!
-Installation
-Installation
-Add this line to your application's Gemfile:
+Recipe Book Hub is a Ruby application, built with the Sinatra framework. This app is built to allow users to keep track of their favorite recipes in one location.
 
-gem 'players'
-And then execute:
+## Installation
 
-$ bundle
-Or install it yourself as:
+To install Recipe Book Hub, fork the repo and run bundle install. After installing the gems, run 'rackup config.ru'. This will get the application up and running. Now in your browser visit 'http://localhost:9292/' and the application should be live.
 
-$ gem install players
+```bash
+git clone <repo credentials>
+cd into folder 
+bundle install
+rackup config.ru
+```
 
-Usage
-TODO: Sign up to create a user who can add, update, and delete recipes from their collection.
+## Usage
 
-Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/Trejon/Sinatra-Portfolio-Project. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-License
-The project is available as open source under the terms of the MIT License.
+Create an account or login once you have created an account. You can now start creating recipes and adding them to your collection. Once a recipe is created, it'll be displayed as clickable link on the homepage.
 
-Code of Conduct
-Everyone interacting in the Save Me A Plate project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
